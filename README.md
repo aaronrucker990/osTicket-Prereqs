@@ -22,17 +22,93 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-Part 1 (Create Virtual Machine in Azure)
+Step 1 (Create Virtual Machine in Azure)
 - Create a Resource Group
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
 - When creating the VM, allow it to create a new Virtual Network (Vnet)
 
+Step 2 (Installation)
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+Connect to your Virtual Machine with Remote Desktop
+Install / Enable IIS in Windows
+Install Web Platform Installer (download from within lab files: link)
+ - Open after installation
+ - Add MySQL 5.5 (it will ask for credentials to be created later)
+    - Name: root
+    - Password: Password1
+ - Add All simple versions of x86 PHP up until 7.3
+ - Fix any failures if required (download from within lab files: link)
+    - Install PHP Version 7.3.8 (or any other version if necessary, archives)
+    - Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
+    - Install Microsoft Visual C++ 2009 Redistributable Package
+
+Step 3 
+
+Install osTicket v1.15.8
+  - Download osTicket (download from within lab files: link)
+  - Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
+  - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+
+Step 4
+
+Reload IIS (Open IIS, Stop and Start the server)
+  - Go to sites -> Default -> osTicket
+  - On the right, click “Browse *:80”
+
+Step 5
+
+Enable Extensions in IIS: Note that some extensions are not enabled
+
+  - Go back to IIS, sites -> Default -> osTicket
+  - Double-click PHP Manager
+  - Click “Enable or disable an extension”
+     - Enable: php_imap.dll
+     - Enable: php_intl.dll
+     - Enable: php_opcache.dll
+ 
+Step 6 
+
+Refresh the osTicket site in your browse, observe the changes
+Rename:
+	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+  
+Step 7
+
+Assign Permissions: ost-config.php
+
+  - Disable inheritance -> Remove All
+  - New Permissions -> Everyone -> All
+
+Step 8
+
+Continue Setting up osTicket in the browser (click Continue)
+  - Name Helpdesk
+  - Default email (receives email from customers)
+
+Step 9
+
+Download and Install HeidiSQL (download from within lab files: link)
+
+Create a new session, root/Password1
+Connect to the session
+Create a database called “osTicket”
+Continue Setting up osticket in the browser
+MySQL Database: osTicket
+MySQL Username: root
+MySQL Password: Password1
+Click “Install Now!”
+Congratulations, hopefully it is installed with no errors!
+Clean up
+Delete: C:\inetpub\wwwroot\osTicket\setup
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
+
+Notes:
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php  
+End Users osTicket URL: http://localhost/osTicket/ 
+
+
 
 <h2>Installation Steps</h2>
 
