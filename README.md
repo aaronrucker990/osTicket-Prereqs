@@ -29,42 +29,42 @@ Step 1 (Create Virtual Machine in Azure)
 
 Step 2 (Installation)
 
-Connect to your Virtual Machine with Remote Desktop
-Install / Enable IIS in Windows
-Install Web Platform Installer (download from within lab files: link)
- - Open after installation
- - Add MySQL 5.5 (it will ask for credentials to be created later)
-    - Name: root
-    - Password: Password1
- - Add All simple versions of x86 PHP up until 7.3
- - Fix any failures if required (download from within lab files: link)
-    - Install PHP Version 7.3.8 (or any other version if necessary, archives)
-    - Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
-    - Install Microsoft Visual C++ 2009 Redistributable Package
+- Connect to your Virtual Machine with Remote Desktop
+- Install / Enable IIS in Windows
+- Install Web Platform Installer (download from within lab files: link)
+ 1. Open after installation
+ 2. Add MySQL 5.5 (it will ask for credentials to be created later)
+    1. Name: root
+    2. Password: Password1
+ 3. Add All simple versions of x86 PHP up until 7.3
+ 4. Fix any failures if required (download from within lab files: link)
+    1. Install PHP Version 7.3.8 (or any other version if necessary, archives)
+    2. Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
+    3. Install Microsoft Visual C++ 2009 Redistributable Package
 
 Step 3 
 
 Install osTicket v1.15.8
-  - Download osTicket (download from within lab files: link)
-  - Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
-  - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+  1. Download osTicket (download from within lab files: link)
+  2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
+  3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
 Step 4
 
 Reload IIS (Open IIS, Stop and Start the server)
-  - Go to sites -> Default -> osTicket
-  - On the right, click “Browse *:80”
+  1. Go to sites -> Default -> osTicket
+  2. On the right, click “Browse *:80”
 
 Step 5
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
-  - Go back to IIS, sites -> Default -> osTicket
-  - Double-click PHP Manager
-  - Click “Enable or disable an extension”
-     - Enable: php_imap.dll
-     - Enable: php_intl.dll
-     - Enable: php_opcache.dll
+  1. Go back to IIS, sites -> Default -> osTicket
+  2. Double-click PHP Manager
+  3. Click “Enable or disable an extension”
+     1. Enable: php_imap.dll
+     2. Enable: php_intl.dll
+     3. Enable: php_opcache.dll
  
 Step 6 
 
@@ -77,31 +77,40 @@ Step 7
 
 Assign Permissions: ost-config.php
 
-  - Disable inheritance -> Remove All
-  - New Permissions -> Everyone -> All
+  1. Disable inheritance -> Remove All
+  2. New Permissions -> Everyone -> All
 
 Step 8
 
 Continue Setting up osTicket in the browser (click Continue)
-  - Name Helpdesk
-  - Default email (receives email from customers)
+  1. Name Helpdesk
+  2. Default email (receives email from customers)
 
 Step 9
 
 Download and Install HeidiSQL (download from within lab files: link)
 
-Create a new session, root/Password1
-Connect to the session
-Create a database called “osTicket”
+  1. Create a new session, root/Password1
+  2. Connect to the session
+  3. Create a database called “osTicket”
+
+Step 10
+
 Continue Setting up osticket in the browser
 MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: Password1
+
+  1. MySQL Username: root
+  2. MySQL Password: Password1
+
+Step 11
+
 Click “Install Now!”
 Congratulations, hopefully it is installed with no errors!
 Clean up
-Delete: C:\inetpub\wwwroot\osTicket\setup
-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+  1. Delete: C:\inetpub\wwwroot\osTicket\setup
+  2. Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
 Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
 
 Notes:
