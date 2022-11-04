@@ -42,20 +42,20 @@ Step 2 (Installation)
     2. Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
     3. Install Microsoft Visual C++ 2009 Redistributable Package
 
-Step 3 
+Step 3 (Installation)
 
 Install osTicket v1.15.8
   1. Download osTicket (download from within lab files: link)
   2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
   3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
-Step 4
+Step 4 (Installation)
 
 Reload IIS (Open IIS, Stop and Start the server)
   1. Go to sites -> Default -> osTicket
   2. On the right, click “Browse *:80”
 
-Step 5
+Step 5 (Installation)
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
@@ -66,27 +66,27 @@ Enable Extensions in IIS: Note that some extensions are not enabled
      2. Enable: php_intl.dll
      3. Enable: php_opcache.dll
  
-Step 6 
+Step 6 (Installation)
 
 Refresh the osTicket site in your browse, observe the changes
 Rename:
 	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
   
-Step 7
+Step 7 (Installation)
 
 Assign Permissions: ost-config.php
 
   1. Disable inheritance -> Remove All
   2. New Permissions -> Everyone -> All
 
-Step 8
+Step 8 (Installation)
 
 Continue Setting up osTicket in the browser (click Continue)
   1. Name Helpdesk
   2. Default email (receives email from customers)
 
-Step 9
+Step 9 (Installation)
 
 Download and Install HeidiSQL (download from within lab files: link)
 
@@ -94,7 +94,7 @@ Download and Install HeidiSQL (download from within lab files: link)
   2. Connect to the session
   3. Create a database called “osTicket”
 
-Step 10
+Step 10 (Installation)
 
 Continue Setting up osticket in the browser
 MySQL Database: osTicket
@@ -102,7 +102,7 @@ MySQL Database: osTicket
   1. MySQL Username: root
   2. MySQL Password: Password1
 
-Step 11
+Step 11 (Installation)
 
 Click “Install Now!”
 Congratulations, hopefully it is installed with no errors!
