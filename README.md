@@ -22,12 +22,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-Step 1 (Create Virtual Machine in Azure)
+Part 1 (Create Virtual Machine in Azure)
 - Create a Resource Group
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
 - When creating the VM, allow it to create a new Virtual Network (Vnet)
 
-Step 2 (Installation)
+Part 2 (Installation)
 
 - Connect to your Virtual Machine with Remote Desktop
 - Install / Enable IIS in Windows
@@ -42,20 +42,20 @@ Step 2 (Installation)
     2. Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
     3. Install Microsoft Visual C++ 2009 Redistributable Package
 
-Step 3 
+Part 3 
 
 Install osTicket v1.15.8
   1. Download osTicket (download from within lab files: link)
   2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
   3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
-Step 4 
+Part 4 
 
 Reload IIS (Open IIS, Stop and Start the server)
   1. Go to sites -> Default -> osTicket
   2. On the right, click “Browse *:80”
 
-Step 5 
+Part 5 
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
@@ -66,27 +66,27 @@ Enable Extensions in IIS: Note that some extensions are not enabled
      2. Enable: php_intl.dll
      3. Enable: php_opcache.dll
  
-Step 6 
+Part 6 
 
 Refresh the osTicket site in your browse, observe the changes
 Rename:
 	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
   
-Step 7 
+Part 7 
 
 Assign Permissions: ost-config.php
 
   1. Disable inheritance -> Remove All
   2. New Permissions -> Everyone -> All
 
-Step 8 (Installation)
+Part 8 (Installation)
 
 Continue Setting up osTicket in the browser (click Continue)
   1. Name Helpdesk
   2. Default email (receives email from customers)
 
-Step 9 
+Part 9 
 
 Download and Install HeidiSQL (download from within lab files: link)
 
@@ -94,7 +94,7 @@ Download and Install HeidiSQL (download from within lab files: link)
   2. Connect to the session
   3. Create a database called “osTicket”
 
-Step 10 
+Part 10 
 
 Continue Setting up osticket in the browser
 MySQL Database: osTicket
@@ -102,7 +102,7 @@ MySQL Database: osTicket
   1. MySQL Username: root
   2. MySQL Password: Password1
 
-Step 11 
+Part 11 
 
 Click “Install Now!”
 Congratulations, hopefully it is installed with no errors!
