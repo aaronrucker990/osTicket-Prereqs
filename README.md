@@ -154,7 +154,24 @@ Install osTicket v1.15.8
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	
+Part 4
+Reload IIS (Open IIS, Stop and Start the server)
+1. Go to sites -> Default -> osTicket
+2. On the right, click “Browse *:80”
+	
+Part 5
+Enable Extensions in IIS: Note that some extensions are not enabled
+1. Go back to IIS, sites -> Default -> osTicket
+2. Double-click PHP Manager
+3. Click “Enable or disable an extension”
+    * Enable: php_imap.dll
+    * Enable: php_intl.dll
+    * Enable: php_opcache.dll
+
+Part 6
+Refresh the osTicket site in your browse, observe the changes Rename: From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
 </p>
 <br />
 
