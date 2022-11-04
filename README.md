@@ -139,6 +139,7 @@ Part 2 (Installation)
     * Install PHP Version 7.3.8 (or any other version if necessary, archives)
     * Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
     * Install Microsoft Visual C++ 2009 Redistributable Package
+	
 Part 3
 Install osTicket v1.15.8
 1. Download osTicket (download from within lab files: link)
