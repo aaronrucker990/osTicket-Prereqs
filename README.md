@@ -170,6 +170,7 @@ Enable Extensions in IIS: Note that some extensions are not enabled
     * Enable: php_opcache.dll
 
 Part 6
+
 Refresh the osTicket site in your browse, observe the changes Rename: From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 </p>
