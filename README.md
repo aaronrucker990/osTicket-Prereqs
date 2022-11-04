@@ -80,7 +80,7 @@ Assign Permissions: ost-config.php
   1. Disable inheritance -> Remove All
   2. New Permissions -> Everyone -> All
 
-Part 8 (Installation)
+Part 8 
 
 Continue Setting up osTicket in the browser (click Continue)
   1. Name Helpdesk
@@ -125,7 +125,26 @@ End Users osTicket URL: http://localhost/osTicket/
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Part 2 (Installation)
+* Connect to your Virtual Machine with Remote Desktop
+* Install / Enable IIS in Windows
+* Install Web Platform Installer (download from within lab files: link)
+1. Open after installation
+2. Add MySQL 5.5 (it will ask for credentials to be created later)
+    * Name: root
+    * Password: Password1
+3. Add All simple versions of x86 PHP up until 7.3
+4. Fix any failures if required (download from within lab files: link)
+    * Install PHP Version 7.3.8 (or any other version if necessary, archives)
+    * Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
+    * Install Microsoft Visual C++ 2009 Redistributable Package
+Part 3
+Install osTicket v1.15.8
+1. Download osTicket (download from within lab files: link)
+2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
+3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+
+
 </p>
 <br />
 
@@ -144,3 +163,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+
