@@ -182,16 +182,19 @@ Refresh the osTicket site in your browse, observe the changes Rename: From: C:\i
 <p>
 	
 Part 7
+
 Assign Permissions: ost-config.php
 1. Disable inheritance -> Remove All
 2. New Permissions -> Everyone -> All
 
 Part 8 (Installation)
+
 Continue Setting up osTicket in the browser (click Continue)
 1. Name Helpdesk
 2. Default email (receives email from customers)
 
 Part 9
+
 Download and Install HeidiSQL (download from within lab files: link)
 1. Create a new session, root/Password1
 2. Connect to the session
