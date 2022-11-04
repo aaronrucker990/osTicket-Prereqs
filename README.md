@@ -125,6 +125,7 @@ End Users osTicket URL: http://localhost/osTicket/
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+	
 Part 2 (Installation)
 * Connect to your Virtual Machine with Remote Desktop
 * Install / Enable IIS in Windows
