@@ -125,8 +125,10 @@ End Users osTicket URL: http://localhost/osTicket/
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+<h2>Summary of Steps 1</h2>	
 	
-Step 1 (Installation)
+Step 1 
 	
 * Connect to your Virtual Machine with Remote Desktop
 * Install / Enable IIS in Windows
@@ -157,6 +159,8 @@ Install osTicket v1.15.8
 </p>
 <p>
 	
+<h2>Summary of Steps 2</h2>	
+	
 Step 3
 	
 Reload IIS (Open IIS, Stop and Start the server)
@@ -184,6 +188,8 @@ Refresh the osTicket site in your browse, observe the changes Rename: From: C:\i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+	
+<h2>Summary of Steps 3</h2>	
 	
 Step 6
 
