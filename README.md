@@ -126,7 +126,7 @@ End Users osTicket URL: http://localhost/osTicket/
 </p>
 <p>
 	
-Part 2 (Installation)
+Step 1 (Installation)
 	
 * Connect to your Virtual Machine with Remote Desktop
 * Install / Enable IIS in Windows
@@ -141,7 +141,7 @@ Part 2 (Installation)
     * Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
     * Install Microsoft Visual C++ 2009 Redistributable Package
 	
-Part 3
+Step 2
 	
 Install osTicket v1.15.8
 1. Download osTicket (download from within lab files: link)
@@ -157,13 +157,13 @@ Install osTicket v1.15.8
 </p>
 <p>
 	
-Part 4
+Step 3
 	
 Reload IIS (Open IIS, Stop and Start the server)
 1. Go to sites -> Default -> osTicket
 2. On the right, click “Browse *:80”
 	
-Part 5
+Step 4
 	
 Enable Extensions in IIS: Note that some extensions are not enabled
 1. Go back to IIS, sites -> Default -> osTicket
@@ -173,7 +173,7 @@ Enable Extensions in IIS: Note that some extensions are not enabled
     * Enable: php_intl.dll
     * Enable: php_opcache.dll
 
-Part 6
+Step 5
 
 Refresh the osTicket site in your browse, observe the changes Rename: From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
@@ -185,19 +185,19 @@ Refresh the osTicket site in your browse, observe the changes Rename: From: C:\i
 </p>
 <p>
 	
-Part 7
+Step 6
 
 Assign Permissions: ost-config.php
 1. Disable inheritance -> Remove All
 2. New Permissions -> Everyone -> All
 
-Part 8 (Installation)
+Step 7 
 
 Continue Setting up osTicket in the browser (click Continue)
 1. Name Helpdesk
 2. Default email (receives email from customers)
 
-Part 9
+Step 8
 
 Download and Install HeidiSQL (download from within lab files: link)
 1. Create a new session, root/Password1
@@ -212,13 +212,13 @@ Download and Install HeidiSQL (download from within lab files: link)
 </p>
 <p>
 
-Part 10
+Step 9
 
 Continue Setting up osticket in the browser MySQL Database: osTicket
 1. MySQL Username: root
 2. MySQL Password: Password1
 
-Part 11
+Step 10
 
 Click “Install Now!” Congratulations, hopefully it is installed with no errors! Clean up
 1. Delete: C:\inetpub\wwwroot\osTicket\setup
