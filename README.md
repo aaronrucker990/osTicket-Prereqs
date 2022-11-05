@@ -218,6 +218,8 @@ Download and Install HeidiSQL (download from within lab files: link)
 </p>
 <p>
 
+<h2>Summary of Steps 4</h2>		
+	
 Step 9
 
 Continue Setting up osticket in the browser MySQL Database: osTicket
