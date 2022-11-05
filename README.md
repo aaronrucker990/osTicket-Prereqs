@@ -51,7 +51,7 @@ Install osTicket v1.15.8
 
 Part 4 
 
-Reload IIS (Open IIS, Stop and Start the server)
+- Reload IIS (Open IIS, Stop and Start the server)
   1. Go to sites -> Default -> osTicket
   2. On the right, click “Browse *:80”
 
