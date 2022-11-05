@@ -127,6 +127,7 @@ End Users osTicket URL: http://localhost/osTicket/
 <p>
 	
 Part 2 (Installation)
+	
 * Connect to your Virtual Machine with Remote Desktop
 * Install / Enable IIS in Windows
 * Install Web Platform Installer (download from within lab files: link)
@@ -141,6 +142,7 @@ Part 2 (Installation)
     * Install Microsoft Visual C++ 2009 Redistributable Package
 	
 Part 3
+	
 Install osTicket v1.15.8
 1. Download osTicket (download from within lab files: link)
 2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
@@ -156,11 +158,13 @@ Install osTicket v1.15.8
 <p>
 	
 Part 4
+	
 Reload IIS (Open IIS, Stop and Start the server)
 1. Go to sites -> Default -> osTicket
 2. On the right, click “Browse *:80”
 	
 Part 5
+	
 Enable Extensions in IIS: Note that some extensions are not enabled
 1. Go back to IIS, sites -> Default -> osTicket
 2. Double-click PHP Manager
