@@ -188,7 +188,10 @@ Refresh the osTicket site in your browse, observe the changes Rename: From: C:\i
 <br />
 
 <p>
-<img src="https://i.imgur.com/07Q8kYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3D0dtFw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
+<img src="https://i.imgur.com/UbURYfr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
 </p>
 <p>
 	
@@ -217,7 +220,11 @@ Download and Install HeidiSQL (download from within lab files: link)
 <br />
 
 <p>
-<img src="https://i.imgur.com/UXUbrhv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/UbURYfr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
+<img src="https://i.imgur.com/rVHejZg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
+	
 </p>
 <p>
 
@@ -239,5 +246,12 @@ Notes: Browse to your help desk login page: http://localhost/osTicket/scp/login
 
 </p>
 <br />
+
+<img src="https://i.imgur.com/lvzTncU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
+<img src="https://i.imgur.com/Z3BUxRM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/zZmAMmy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 
 
