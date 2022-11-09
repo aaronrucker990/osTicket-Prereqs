@@ -154,9 +154,9 @@ Install osTicket v1.15.8
 <br />
 
 <p>
-<img src="https://i.imgur.com/zsiRqhS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/07Q8kYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 	
-<img src="https://i.imgur.com/zsiRqhS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>	
+<img src="https://i.imgur.com/UXUbrhv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>	
 	
 	
 </p>
