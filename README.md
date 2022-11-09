@@ -119,6 +119,9 @@ End Users osTicket URL: http://localhost/osTicket/
 
 <p>
 <img src="https://i.imgur.com/VtcyxYU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
+<img src="https://i.imgur.com/VtcyxYU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+	
 </p>
 <p>
 
