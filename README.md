@@ -19,44 +19,44 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 Part 1 (Create Virtual Machine in Azure)
-- Create a Resource Group
-- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
-- When creating the VM, allow it to create a new Virtual Network (Vnet)
+- Create a Resource Group.
+- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs.
+- When creating the VM, allow it to create a new Virtual Network (Vnet).
 
 Part 2 (Installation)
 
-- Connect to your Virtual Machine with Remote Desktop
-- Install / Enable IIS in Windows
-- Install Web Platform Installer (download from within lab files: link)
- 1. Open after installation
- 2. Add MySQL 5.5 (it will ask for credentials to be created later)
+- Connect to your Virtual Machine with Remote Desktop.
+- Install / Enable IIS in Windows.
+- Install Web Platform Installer (download from within lab files: link).
+ 1. Open after installation.
+ 2. Add MySQL 5.5 (it will ask for credentials to be created later).
     1. Name: root
     2. Password: Password1
- 3. Add All simple versions of x86 PHP up until 7.3
- 4. Fix any failures if required (download from within lab files: link)
-    1. Install PHP Version 7.3.8 (or any other version if necessary, archives)
-    2. Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
-    3. Install Microsoft Visual C++ 2009 Redistributable Package
+ 3. Add All simple versions of x86 PHP up until 7.3.
+ 4. Fix any failures if required (download from within lab files: link).
+    1. Install PHP Version 7.3.8 (or any other version if necessary, archives).
+    2. Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop).
+    3. Install Microsoft Visual C++ 2009 Redistributable Package.
 
 Part 3 
 
 Install osTicket v1.15.8
-  1. Download osTicket (download from within lab files: link)
-  2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
-  3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+  1. Download osTicket (download from within lab files: link).
+  2. Extract and copy the “upload” folder INTO c:\inetpub\wwwroot .
+  3. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”.
 
 Part 4 
 
- Reload IIS (Open IIS, Stop and Start the server)
-  1. Go to sites -> Default -> osTicket
-  2. On the right, click “Browse *:80”
+ Reload IIS (Open IIS, Stop and Start the server).
+  1. Go to sites -> Default -> osTicket .
+  2. On the right, click “Browse *:80” .
 
 Part 5 
 
 Enable Extensions in IIS: Note that some extensions are not enabled
 
-  1. Go back to IIS, sites -> Default -> osTicket
-  2. Double-click PHP Manager
+  1. Go back to IIS, sites -> Default -> osTicket .
+  2. Double-click PHP Manager.
   3. Click “Enable or disable an extension”
      1. Enable: php_imap.dll
      2. Enable: php_intl.dll
@@ -78,9 +78,9 @@ Assign Permissions: ost-config.php
 
 Part 8 
 
-Continue Setting up osTicket in the browser (click Continue)
-  1. Name Helpdesk
-  2. Default email (receives email from customers)
+Continue Setting up osTicket in the browser (click Continue).
+  1. Name Helpdesk.
+  2. Default email (receives email from customers).
 
 Part 9 
 
